@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>How Many Racks Would Sit at the Denton 3PL?</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,Segoe UI,Calibri,Arial,sans-serif;background:#eef1f6;color:#1c2433}
+header{background:linear-gradient(90deg,#1F3864,#2E75B6);color:#fff;padding:18px 26px}
+header h1{font-size:21px;font-weight:700}.meta{font-size:12px;opacity:.95;margin-top:6px}
+.badge{display:inline-block;background:#548235;color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:6px}
+nav{display:flex;background:#1F3864;border-top:1px solid #2E75B6}
+nav button{background:none;border:none;color:#cdd8ee;font-size:14px;font-weight:600;padding:12px 22px;cursor:pointer;border-bottom:3px solid transparent}
+nav button:hover{color:#fff}nav button.active{color:#fff;border-bottom:3px solid #6FA8DC;background:#27406e}
+.page{display:none;padding:24px 28px;max-width:1150px}.page.active{display:block}
+.big{background:#fff;border:1px solid #dde3ee;border-radius:12px;padding:22px 26px;margin-bottom:18px;text-align:center}
+.concl{background:#1F3864;color:#fff;border-radius:12px;padding:16px 20px;margin-bottom:14px;font-size:15px;line-height:1.55}
+.concl b{color:#ffd866}
+.subnote{font-size:12.5px;color:#56657f;margin:-4px 0 14px;padding-left:2px}
+.big .n{font-size:62px;font-weight:800;color:#1F3864;line-height:1}
+.big .lab{font-size:15px;color:#41597f;margin-top:8px}
+.kpis{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:18px}
+.kpi{flex:1;min-width:165px;background:#fff;border:1px solid #dde3ee;border-radius:10px;padding:14px 16px}
+.kpi .v{font-size:25px;font-weight:700;color:#1F3864}.kpi .l{font-size:12px;color:#41597f;margin-top:3px;line-height:1.4}
+h2{font-size:16px;color:#1F3864;margin:20px 0 8px}
+.card{background:#fff;border:1px solid #dde3ee;border-radius:10px;padding:18px 20px;margin-bottom:16px;font-size:14px;line-height:1.7;color:#33415c}
+.steps{counter-reset:s;list-style:none}
+.steps li{position:relative;padding:9px 0 9px 44px;border-bottom:1px solid #eef2f7;font-size:14px;line-height:1.5}
+.steps li:last-child{border-bottom:none}
+.steps li:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:8px;width:28px;height:28px;background:#2E75B6;color:#fff;border-radius:50%;text-align:center;line-height:28px;font-weight:700}
+.src b{color:#1F3864}svg{width:100%;height:300px}.legend{font-size:12px;color:#56657f;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:9px 12px;border-bottom:1px solid #e7ecf4;text-align:left}th{background:#2E75B6;color:#fff;font-size:13px}
+td.r,th.r{text-align:right}tbody tr:nth-child(even){background:#f7f9fd}
+.tt{position:fixed;pointer-events:none;background:#1F3864;color:#fff;font-size:12px;padding:6px 10px;border-radius:5px;opacity:0;white-space:nowrap;z-index:9}
+ul.gk{font-size:14px;line-height:1.85;color:#33415c;padding-left:20px}
+</style></head><body>
+<div class="tt" id="tt"></div>
+<header><h1>How many racks would sit waiting at the new Denton 3PL?<span class="badge">PLAIN-ENGLISH SUMMARY</span></h1>
+<div class="meta">Racks headed to U.S. data centers under 100 MW · history (what happened) + forecast (what's on order) · pulled June 12, 2026</div></header>
+<nav><button class="active" onclick="show(0,this)">The Answer (history)</button>
+<button onclick="show(1,this)">Looking Ahead (forecast)</button>
+<button onclick="show(2,this)">Month by Month</button>
+<button onclick="show(3,this)">The Sites We Used</button></nav>
+<div id="p0" class="page active"></div><div id="p1" class="page"></div><div id="p2" class="page"></div><div id="p3" class="page"></div>
+<script>
+const D={"peak": 490, "med": 37, "p90": 186, "mx": 223, "matched": 671, "shipped": 777, "unmatched": 106, "months": [{"m": "2025-05", "recv": 7, "ship": 6, "sit": 1}, {"m": "2025-06", "recv": 80, "ship": 0, "sit": 81}, {"m": "2025-07", "recv": 22, "ship": 0, "sit": 103}, {"m": "2025-09", "recv": 58, "ship": 0, "sit": 161}, {"m": "2025-10", "recv": 329, "ship": 0, "sit": 490}, {"m": "2025-11", "recv": 51, "ship": 274, "sit": 267}, {"m": "2025-12", "recv": 57, "ship": 175, "sit": 149}, {"m": "2026-01", "recv": 4, "ship": 0, "sit": 153}, {"m": "2026-02", "recv": 0, "ship": 16, "sit": 137}, {"m": "2026-03", "recv": 63, "ship": 145, "sit": 55}, {"m": "2026-04", "recv": 0, "ship": 44, "sit": 11}, {"m": "2026-05", "recv": 0, "ship": 11, "sit": 0}], "pulled": "June 12, 2026", "fcast": [{"m": "2026-06", "arrive": 115, "sit": 20}, {"m": "2026-07", "arrive": 116, "sit": 116}, {"m": "2026-08", "arrive": 80, "sit": 80}, {"m": "2026-09", "arrive": 0, "sit": 0}], "fpeak": 116, "commit_total": 311, "sites": [{"loc": "US-ARQ01", "city": "Marble", "state": "NC", "mw": 79.24}, {"loc": "US-DNN01", "city": "Dalton", "state": "GA", "mw": 38.0}, {"loc": "US-EVI01", "city": "Elk Grove", "state": "IL", "mw": 24.0}, {"loc": "US-RIN01", "city": "Richardson", "state": "TX", "mw": 21.0}, {"loc": "US-EWS01", "city": "East Windsor", "state": "NJ", "mw": 20.7}, {"loc": "US-VO201", "city": "Volo", "state": "IL", "mw": 20.0}, {"loc": "US-CDZ01", "city": "Caledonia", "state": "MI", "mw": 18.6}, {"loc": "US-OBG01", "city": "Orangeburg", "state": "NY", "mw": 16.0}, {"loc": "US-PLZ02", "city": "Plano", "state": "TX", "mw": 13.5}, {"loc": "US-QNC01", "city": "Quincy", "state": "WA", "mw": 13.07}, {"loc": "US-CMH01", "city": "Columbus", "state": "OH", "mw": 12.0}, {"loc": "US-NNN01", "city": "Centennial", "state": "CO", "mw": 8.0}, {"loc": "US-CYL01", "city": "Chantilly", "state": "VA", "mw": 4.0}, {"loc": "US-WJQ01", "city": "Weehawken", "state": "NJ", "mw": 3.2}, {"loc": "US-LHS01", "city": "Lithia Springs", "state": "GA", "mw": 2.4}]};const tt=document.getElementById('tt');const fmt=n=>Math.round(n).toLocaleString();
+function hov(e,t){tt.innerHTML=t;tt.style.opacity=1;tt.style.left=(e.clientX+12)+'px';tt.style.top=(e.clientY+12)+'px';}
+function out(){tt.style.opacity=0;}
+document.getElementById('p0').innerHTML=`
+ <div class="concl"><b>Conclusion:</b> Denton would have needed space for about <b>${fmt(D.peak)} racks</b> at the historical peak. Based on current open orders, the forward peak is about <b>${fmt(D.fpeak)} racks</b>. The forecast is lower because it only includes orders already placed.</div>
+ <div class="subnote">History shows what actually happened. Forecast shows only racks already on order. &nbsp;·&nbsp; Only U.S. sites under 100 MW are included, because larger sites may need a different local support model.</div>
+ <div class="big"><div class="n">~${fmt(D.peak)}</div><div class="lab">racks — the most that would be sitting at the Denton 3PL at one time, waiting to ship to a small (&lt;100 MW) data center</div></div>
+ <div class="kpis">
+ <div class="kpi"><div class="v">${D.med} days</div><div class="l">how long a rack typically sits in storage before it ships to the site</div></div>
+ <div class="kpi"><div class="v">${D.mx} days</div><div class="l">the longest a rack sat</div></div>
+ <div class="kpi"><div class="v">${fmt(D.shipped)}</div><div class="l">racks shipped to the small sites (the ones we measured)</div></div>
+ <div class="kpi"><div class="v">${D.sites.length}</div><div class="l">small data centers (all under 100 MW)</div></div>
+ </div>
+ <h2>How we got the ~${fmt(D.peak)} number</h2>
+ <div class="card"><div style="font-size:14px;color:#1F3864;font-weight:600;margin-bottom:10px">Rack wait time = receipt date to ship date. &nbsp; Capacity need = the highest number of racks waiting at the same time.</div><ul class="steps">
+ <li>We found every rack that was shipped to one of the ${D.sites.length} small (&lt;100 MW) U.S. data centers — <b>${fmt(D.shipped)} racks</b> in all.</li>
+ <li>For each rack we found two dates: when it was <b>first received into storage</b> (receipt date) and when it <b>shipped out to the site</b> (transfer date).</li>
+ <li>The gap between those two dates is how long it <b>sat in a warehouse waiting</b>. Half sat ${D.med} days or less; the slowest 10% sat ${D.p90}+ days; the longest sat ${D.mx} days.</li>
+ <li>Then, month by month, we counted how many racks were sitting and waiting <b>at the same time</b>.</li>
+ <li>The busiest month had about <b>${fmt(D.peak)}</b> racks sitting at once — so that's how many the new central 3PL would need to hold.</li>
+ </ul></div>
+ <h2>Where the numbers came from</h2>
+ <div class="card"><div class="src">
+ <b>Two dates per rack, both from the purchasing &amp; inventory system:</b><br>
+ • <b>Receipt date</b> = when the rack arrived into storage.<br>
+ • <b>Transfer date</b> = when it shipped out to the data center.<br>
+ Everything is counted in <b>whole racks</b> (not parts or GPUs). <b>Small sites (under 100 MW)</b> come from the data-center power records.</div></div>
+ <h2>Good to know (the honest caveats)</h2>
+ <div class="card"><ul class="gk">
+ <li>Of the ${fmt(D.shipped)} racks shipped to the small sites, we could trace a U.S. receipt date for ${fmt(D.matched)}. The other ${fmt(D.unmatched)} were likely received overseas or before our data starts, so the wait times are based on the ${fmt(D.matched)} we could follow.</li>
+ <li>There are no serial numbers linking a specific arrival to a specific shipment, so we match racks oldest-first by product. Individual wait times are close estimates — the <b>busiest-month peak (~${fmt(D.peak)})</b> and the <b>typical wait (~${D.med} days)</b> are the numbers to rely on.</li>
+ <li>To be safe, plan the 3PL for a bit more than the busiest month — a cushion above ~${fmt(D.peak)}.</li>
+ </ul></div>`;
+function chart(){let M=D.months,w=1080,h=300,pad=42,mx=Math.max(...M.map(x=>Math.max(x.sit,x.recv,x.ship)),1),bw=(w-pad*2)/M.length/2.6;
+ let bars=M.map((x,i)=>{let x0=pad+i*(w-pad*2)/M.length,hr=(x.recv/mx)*(h-pad-20),hs=(x.ship/mx)*(h-pad-20);
+  return `<rect x="${x0}" y="${h-pad-hr}" width="${bw}" height="${hr}" fill="#9bc2e6" onmousemove="hov(event,'${x.m}: ${x.recv} arrived')" onmouseout="out()"></rect>
+  <rect x="${x0+bw+2}" y="${h-pad-hs}" width="${bw}" height="${hs}" fill="#94c47d" onmousemove="hov(event,'${x.m}: ${x.ship} shipped to a site')" onmouseout="out()"></rect>
+  <text x="${x0+bw}" y="${h-pad+14}" font-size="8" text-anchor="middle" fill="#7387a6">${x.m.slice(2)}</text>`}).join('');
+ let pts=M.map((x,i)=>[pad+i*(w-pad*2)/M.length+bw,h-pad-(x.sit/mx)*(h-pad-20)]);
+ let line=pts.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join(' ');
+ let dots=M.map((x,i)=>`<circle cx="${pts[i][0]}" cy="${pts[i][1]}" r="4" fill="#1F3864" onmousemove="hov(event,'${x.m}: ${x.sit} racks sitting')" onmouseout="out()"></circle>`).join('');
+ return `<svg viewBox="0 0 ${w} ${h}">${bars}<path d="${line}" fill="none" stroke="#1F3864" stroke-width="2.5"/>${dots}</svg>
+ <div class="legend"><span style="color:#1F3864">●—</span> <b>Racks sitting & waiting (the key line)</b> &nbsp; <span style="color:#9bc2e6">■</span> Arrived &nbsp; <span style="color:#94c47d">■</span> Shipped to a site &nbsp;·&nbsp; hover any point</div>`;}
+// ---- FORECAST tab (p1) ----
+function fchart(){let M=D.fcast,w=1080,h=280,pad=42,mx=Math.max(...M.map(x=>Math.max(x.sit,x.arrive)),1),bw=(w-pad*2)/M.length/2.6;
+ let bars=M.map((x,i)=>{let x0=pad+i*(w-pad*2)/M.length,ha=(x.arrive/mx)*(h-pad-20);
+  return `<rect x="${x0}" y="${h-pad-ha}" width="${bw*1.6}" height="${ha}" fill="#e0b94d" onmousemove="hov(event,'${x.m}: ${x.arrive} racks expected to arrive')" onmouseout="out()"></rect>
+  <text x="${x0+bw}" y="${h-pad+14}" font-size="9" text-anchor="middle" fill="#7387a6">${x.m.slice(2)}</text>`}).join('');
+ let pts=M.map((x,i)=>[pad+i*(w-pad*2)/M.length+bw,h-pad-(x.sit/mx)*(h-pad-20)]);
+ let line=pts.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join(' ');
+ let dots=M.map((x,i)=>`<circle cx="${pts[i][0]}" cy="${pts[i][1]}" r="4" fill="#BF8F00" onmousemove="hov(event,'${x.m}: ${x.sit} racks waiting')" onmouseout="out()"></circle>`).join('');
+ return `<svg viewBox="0 0 ${w} ${h}">${bars}<path d="${line}" fill="none" stroke="#BF8F00" stroke-width="2.5"/>${dots}</svg>
+ <div class="legend"><span style="color:#BF8F00">●—</span> <b>Racks waiting at the 3PL (forecast)</b> &nbsp; <span style="color:#e0b94d">■</span> Racks expected to arrive &nbsp;·&nbsp; hover any point</div>`;}
+document.getElementById('p1').innerHTML=`
+ <div class="big"><div class="n" style="color:#BF8F00">~${fmt(D.fpeak)}</div><div class="lab">racks we expect to be waiting at the 3PL at the busiest point ahead, based on orders already placed</div></div>
+ <div class="kpis">
+ <div class="kpi"><div class="v">${fmt(D.commit_total)}</div><div class="l">racks already on order for the small sites (not yet delivered)</div></div>
+ <div class="kpi"><div class="v">${D.med} days</div><div class="l">how long each will sit (from past behavior)</div></div>
+ <div class="kpi"><div class="v">${D.fcast.length} months</div><div class="l">how far the current orders reach</div></div>
+ </div>
+ <h2>What's coming month by month</h2>
+ <div class="card">${fchart()}</div>
+ <h2>How we got the forecast</h2>
+ <div class="card"><ul class="steps">
+ <li>We took the racks <b>already on order</b> for the small sites and the date each is <b>expected to arrive</b> (the supplier's committed date). We assume those dates and amounts are correct.</li>
+ <li>We assume each rack then <b>sits about ${D.med} days</b> before shipping to the site — the same wait we saw in the real history.</li>
+ <li>Month by month, we counted how many would be waiting at the same time. The busiest point is about <b>${fmt(D.fpeak)}</b> racks.</li>
+ </ul></div>
+ <h2>Good to know</h2>
+ <div class="card"><ul class="gk">
+ <li>This only counts orders <b>currently on the books</b> — right now that's ${fmt(D.commit_total)} racks reaching ~${D.fcast.length} months out, for the few sites with committed orders. As more orders are placed, this number will grow.</li>
+ <li>That's why the forecast peak (~${fmt(D.fpeak)}) looks smaller than the historical peak (~${fmt(D.peak)}): history captured a big past surge, while the forecast only sees what's been ordered so far.</li>
+ <li>The wait time (~${D.med} days) is the average from the past; a real cushion should allow for the longer waits we've seen (up to ${D.mx} days).</li>
+ </ul></div>`;
+document.getElementById('p2').innerHTML=`
+ <div class="card">Each month: how many racks <b>arrived</b>, how many <b>shipped out</b> to a small site, and — the line — how many were <b>sitting and waiting</b> at that point. They piled up in late 2025 (lots arrived before they shipped), peaking at about <b>${fmt(D.peak)}</b> racks.</div>
+ <div class="card">${chart()}</div>`;
+document.getElementById('p3').innerHTML=`
+ <div class="card">These are the ${D.sites.length} U.S. data centers <b>under 100 MW</b> that the racks were headed to. (Bigger sites are left out on purpose — this is about the smaller sites a shared 3PL would serve.)</div>
+ <div class="card"><table><thead><tr><th>Site</th><th>Location</th><th class="r">Size (MW)</th></tr></thead><tbody>
+ ${D.sites.map(s=>`<tr><td>${s.loc}</td><td>${s.city}, ${s.state}</td><td class="r">${s.mw}</td></tr>`).join('')}</tbody></table></div>`;
+function show(i,b){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));document.getElementById('p'+i).classList.add('active');b.classList.add('active');}
+</script></body></html>
